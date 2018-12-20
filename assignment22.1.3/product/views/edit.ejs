@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment 22.1.3</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <a href="/"><button class="nav-link">Home</button></a>
+
+    <!-- Main -->
+    <main class="container">
+            <h4>Product edit</h4>
+            <div>&nbsp;</div>
+            <form action="/update/<%= product._id %>" method="post">
+                <div>
+                    <label>Name</label>
+                    <input type="text" class="mtl" name="name" value="<%= product.name %>" placeholder="Name here">
+                </div>
+                <div>
+                        <label>Price</label>
+                        <input type="number" class="mtl" name="price" value="<%= product.price %>" placeholder="Price here">
+                </div>
+                <div>
+                    <label>Description</label>
+                    <input type="text" class="mtl" name="description" value="<%= product.description %>" placeholder="Description here">
+                </div>
+                <div class="form-group">
+                        <label>Color</label>
+                        <input type="text" class="mtl" name="color" value="<%= product.color %>" placeholder="Color here">
+                </div>
+                <div class="form-group">
+                        <label>Category</label>
+                        <input type="text" class="mtl" name="category" value="<%= product.category %>" placeholder="Category here">
+                </div>
+                <div class="form-group">
+                        <label>Brand</label>
+                        <input type="text" class="mtl" name="brand" value="<%= product.brand %>" placeholder="Brand here">
+                </div>
+                <div class="form-group">
+                        <label>Color</label>
+                        <input type="text" class="mtl" name="product_status" value="<%= product.product_status %>" placeholder="Product status here">
+                </div>
+                <div>&nbsp;</div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+    </main>
+    <!-- /.container -->
+
+    <script type="text/javascript" src="./js/jquery.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/popper.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

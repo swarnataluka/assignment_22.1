@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment 22.1.3</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main role="main" class="container">
+
+        <div class="starter-template">
+            <h4>Product create</h4>
+            <div>&nbsp;</div>
+            <form action="/products" method="post">
+                <div class="form-group">
+                    <label for="Input">Name</label>
+                    <input type="text" class="form-control" name="name" placeholder="Name Here">
+                </div>
+                <div class="form-group">
+                        <label for="Input">Price</label>
+                        <input type="number" class="form-control" name="price" placeholder="Price here">
+                </div>    
+                <div class="form-group">
+                    <label for="Input">Description</label>
+                    <input type="text" class="form-control" name="description" placeholder="Description Here">
+                </div>
+                <div class="form-group">
+                        <label for="Input">Color</label>
+                        <input type="text" class="form-control" name="color" placeholder="Color here">
+                </div>
+                <div class="form-group">
+                        <label for="Input">Category</label>
+                        <input type="text" class="form-control" name="category" placeholder="Category here">
+                </div>
+                <div class="form-group">
+                        <label for="Input">Brand</label>
+                        <input type="text" class="form-control" name="brand" placeholder="Brand here">
+                </div>
+                <div class="form-group">
+                        <label for="Input">Product status</label>
+                        <input type="text" class="form-control" name="product_status" placeholder="Product status here">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    </main>
+    <!-- /.container -->
+
+    <script type="text/javascript" src="./js/jquery.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/popper.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

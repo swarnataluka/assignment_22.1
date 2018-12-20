@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment 22.1.3</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <a href="/"><button class="nav-link">Home</button></a>
+
+    <!-- Main -->
+    <main class="mtl">
+            <h4>Product detail</h4>
+            <div>&nbsp;</div>
+            <table class="table table-bordered">
+                <tr>
+                    <td>ID</td>
+                    <td>
+                        <%= product._id %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <%= product.name %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>
+                        <%= product.price %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>
+                        <%= product.description %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td>
+                        <%= product.color %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>
+                        <%= product.category %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Brand</td>
+                    <td>
+                        <%= product.brand %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Product status</td>
+                    <td>
+                        <%= product.product_status %>
+                    </td>
+                </tr>
+            </table>
+        <a href="/edit/<%= product._id %>"><button class="nav-link">Edit</button></a>
+        <div>&nbsp;</div>
+        <form action="/products/<%= product._id %>" method="post">
+            <button type="submit">Delete</button>
+        </form>
+
+    </main>
+    <!-- /.container -->
+
+    <script type="text/javascript" src="./js/jquery.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/popper.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
